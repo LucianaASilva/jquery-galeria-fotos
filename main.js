@@ -11,8 +11,8 @@ $ (document).ready (function() {
 
     $('form').on('submit',function (e) {
        e.preventDefault();
-       const enderecoDaNovaImagem = $('endereco-imagem-nova') .val();
-       const novoItem = $('<li>style="display:none</li>'); // serve para aimagem não aparecer
+       const enderecoDaNovaImagem = $('#endereco-imagem-nova') .val();
+       const novoItem = $('<li style="display: none"></li>'); // serve para aimagem não aparecer
        $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
        $(`
         <div class="overlay-imagem-link">
